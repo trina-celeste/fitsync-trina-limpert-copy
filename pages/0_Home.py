@@ -17,10 +17,22 @@ st.markdown("""
 
   /* ── Hide Streamlit chrome ── */
   #MainMenu, footer, header { visibility: hidden; }
+  header { visibility: hidden; }
   .block-container {
     padding: 0 2.5rem 4rem 2.5rem;
     max-width: 1200px;
   }
+
+  [data-testid="collapsedControl"] {
+    display: block !important;
+    visibility: visible !important;
+}
+
+section[data-testid="stSidebar"][aria-expanded="false"] {
+    display: block !important;
+    min-width: 0 !important;
+    width: 0 !important;
+}
 
   /* ── Typography helpers ── */
   .display-tag {
