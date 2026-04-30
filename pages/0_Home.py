@@ -34,6 +34,23 @@ section[data-testid="stSidebar"][aria-expanded="false"] {
     width: 0 !important;
 }
 
+[data-testid="stSidebarNav"] {
+    background: transparent !important;
+  }
+
+  /* Force collapse button to always show */
+  [data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+
+  /* Hide the collapse arrow so sidebar can't be closed */
+  button[kind="header"] {
+    display: none !important;
+  }
+
   /* ── Typography helpers ── */
   .display-tag {
     font-family: 'Syne', sans-serif;
