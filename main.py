@@ -9,7 +9,13 @@ st.set_page_config(
 )
 
 # ── Custom CSS ─────────────────────────────────────────────────────────────────
+
+[data-testid="stSidebarNav"] {
+    display: block !important;
+    visibility: visible !important;
+}
 st.markdown("""
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap');
 
