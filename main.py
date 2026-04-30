@@ -10,10 +10,6 @@ st.set_page_config(
 
 # ── Custom CSS ─────────────────────────────────────────────────────────────────
 
-[data-testid="stSidebarNav"] {
-    display: block !important;
-    visibility: visible !important;
-}
 st.markdown("""
 
 <style>
