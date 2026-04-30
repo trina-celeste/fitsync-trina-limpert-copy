@@ -8,6 +8,14 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+# ── Navigation ────────────────────────────────────────────────────────────────
+pg = st.navigation([
+    st.Page("main.py", title="Home", icon="⚡"),
+    st.Page("pages/1_Dashboard.py", title="Dashboard", icon="📊"),
+    st.Page("pages/2_Trends.py", title="Trends", icon="📈"),
+])
+pg.run()
+
 # ── Custom CSS ─────────────────────────────────────────────────────────────────
 
 st.markdown("""
